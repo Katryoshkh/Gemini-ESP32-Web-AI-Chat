@@ -21,7 +21,6 @@ Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuk
 * Koneksi Wi-Fi aktif
 
 ## Instalasi
-
 1. **Clone repositori ini**
 
    ```bash
@@ -54,7 +53,7 @@ Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuk
 ## Screenshot
 
 *Tampilan antarmuka web akan terlihat seperti ini:*
-![preview](docs/screenshot.png) *(Tambahkan gambar sendiri di folder `docs/` jika ingin)*
+![preview](docs/screenshot.png) *
 
 ## Catatan Penting
 
