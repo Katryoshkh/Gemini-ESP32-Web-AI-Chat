@@ -21,13 +21,18 @@ Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuk
 * Koneksi Wi-Fi aktif
 
 ## Instalasi
+
+### Cara 1: Clone dan buka langsung
+
 1. **Clone repositori ini**
 
    ```bash
    git clone https://github.com/Katryoshkh/Gemini-ESP32-Web-AI-Chat.git
    ```
 
-2. **Buka file `.ino` di Arduino IDE**
+2. **Buka file `.ino`**
+
+   Buka file `Gemini-ESP32-Web-AI-Chat/Gemini-ESP32-Web-AI-Chat.ino` di Arduino IDE.
 
 3. **Masukkan kredensial Wi-Fi & API Key**
 
@@ -39,10 +44,32 @@ Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuk
    ```
 
 4. **Unggah ke ESP32**
-   Pastikan kamu memilih board dan port yang sesuai di Arduino IDE.
+
+   Pastikan board dan port sudah benar di Arduino IDE.
 
 5. **Buka Serial Monitor**
-   Setelah terkoneksi, buka alamat IP yang muncul di browser kamu.
+
+   Setelah ESP32 terhubung Wi-Fi, akses IP yang muncul lewat browser.
+
+---
+
+### Cara 2: Salin kode manual
+
+1. Buat folder proyek di komputer kamu, misalnya:
+
+   ```
+   /Gemini-ESP32-Web-AI-Chat/
+   ```
+
+2. Buat file baru bernama `Gemini-ESP32-Web-AI-Chat.ino` di dalam folder tersebut.
+
+3. Salin seluruh kode dari repo [Gemini-ESP32-Web-AI-Chat](https://github.com/Katryoshkh/Gemini-ESP32-Web-AI-Chat/blob/main/Gemini-ESP32-Web-AI-Chat/Gemini-ESP32-Web-AI-Chat.ino)
+
+4. Buka file ini dengan Arduino IDE.
+
+5. Masukkan kredensial Wi-Fi & API Key seperti biasa.
+
+6. Unggah ke ESP32 dan cek Serial Monitor seperti cara 1.
 
 ## Cara Pakai
 
