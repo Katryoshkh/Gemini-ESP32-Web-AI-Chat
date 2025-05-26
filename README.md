@@ -80,7 +80,7 @@ Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuk
 ## Screenshot
 
 *Tampilan antarmuka web akan terlihat seperti ini:*
-![preview](docs/screenshot.png) *
+![preview](docs/screenshot.png)
 
 ## Catatan Penting
 
