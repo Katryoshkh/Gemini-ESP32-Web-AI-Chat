@@ -55,7 +55,7 @@ Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuk
 
 ### Cara 2: Salin kode manual
 
-1. Buat folder proyek di komputer kamu, misalnya:
+1. Buat folder proyek di komputer, misalnya:
 
    ```
    /Gemini-ESP32-Web-AI-Chat/
@@ -73,7 +73,7 @@ Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuk
 
 ## Cara Pakai
 
-* Ketikkan pertanyaanmu di kolom input.
+* Ketikkan prompt di kolom input.
 * Klik tombol **"Kirim"** atau tekan `Enter`.
 * Respons akan ditampilkan dengan format markdown.
 
@@ -85,7 +85,7 @@ Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuk
 ## Catatan Penting
 
 * Gunakan API Key pribadi dan jangan share secara publik.
-* Proyek ini **tidak melakukan hosting model AI di perangkat**, hanya menjadi antarmuka ke cloud Gemini API.
+* Proyek ini **tidak melakukan hosting model AI di perangkat**, dan hanya menjadi antarmuka ke cloud Gemini API.
 * Pastikan koneksi internet stabil saat digunakan.
 
 ## Lisensi
