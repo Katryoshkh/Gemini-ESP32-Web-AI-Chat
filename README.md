@@ -1,40 +1,40 @@
 # Gemini ESP32 Web AI Chat
 
-Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuka chat berbasis Gemini API langsung dari perangkat IoT. Dibuat menggunakan **Arduino IDE**, proyek ini memungkinkan pengguna untuk berinteraksi dengan Gemini AI melalui jaringan lokal.
+This project turns an ESP32 into a web server that hosts a Gemini API-based chat interface directly from an IoT device. Built with **Arduino IDE**, it lets users interact with Gemini AI over a local network.
 
-## Fitur
+## Features
 
-* Menjadikan ESP32 sebagai web server (port 80)
-* Antarmuka web interaktif dengan UI modern
-* Menggunakan Gemini 2.0 Flash API dari Google untuk pemrosesan pertanyaan
-* Mendukung respons markdown (ditampilkan dengan `marked.js`)
-* Optimal untuk perangkat low-power seperti ESP32
+* Turns the ESP32 into a web server (port 80)
+* Interactive web interface with a modern UI
+* Uses Google's Gemini 2.0 Flash API to process questions
+* Supports markdown responses (rendered with `marked.js`)
+* Well suited for low-power devices like the ESP32
 
-## Prasyarat
+## Prerequisites
 
 * **ESP32 Board**
-* **Arduino IDE** dengan:
+* **Arduino IDE** with:
 
-  * Board ESP32 sudah diinstal [arduino-esp32](https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json)
-  * Library `WiFi.h` dan `WebServer.h` (biasanya sudah bawaan ESP32 core)
-* API Key dari [Google AI Studio](https://aistudio.google.com)
-* Koneksi Wi-Fi aktif
+  * ESP32 board support installed ([arduino-esp32](https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json))
+  * The `WiFi.h` and `WebServer.h` libraries (usually bundled with the ESP32 core)
+* An API Key from [Google AI Studio](https://aistudio.google.com)
+* An active Wi-Fi connection
 
-## Instalasi
+## Installation
 
-### Cara 1: Clone dan buka langsung
+### Method 1: Clone and open directly
 
-1. **Clone repositori ini**
+1. **Clone this repository**
 
    ```bash
    git clone https://github.com/Katryoshkh/Gemini-ESP32-Web-AI-Chat.git
    ```
 
-2. **Buka file `.ino`**
+2. **Open the `.ino` file**
 
-   Buka file `Gemini-ESP32-Web-AI-Chat/Gemini-ESP32-Web-AI-Chat.ino` di Arduino IDE.
+   Open `Gemini-ESP32-Web-AI-Chat/Gemini-ESP32-Web-AI-Chat.ino` in Arduino IDE.
 
-3. **Masukkan kredensial Wi-Fi & API Key**
+3. **Enter your Wi-Fi credentials & API Key**
 
    ```cpp
    const char* ssid = "YOUR_SSID";
@@ -43,51 +43,51 @@ Proyek ini memungkinkan ESP32 untuk menjadi web server yang menghosting antarmuk
    const API_KEY = "YOUR_API_KEY";
    ```
 
-4. **Unggah ke ESP32**
+4. **Upload to the ESP32**
 
-   Pastikan board dan port sudah benar di Arduino IDE.
+   Make sure the board and port are set correctly in Arduino IDE.
 
-5. **Buka Serial Monitor**
+5. **Open the Serial Monitor**
 
-   Setelah ESP32 terhubung Wi-Fi, akses IP yang muncul lewat browser.
+   Once the ESP32 connects to Wi-Fi, open the IP address shown there in your browser.
 
 ---
 
-### Cara 2: Salin kode manual
+### Method 2: Copy the code manually
 
-1. Buat folder proyek di komputer, misalnya:
+1. Create a project folder on your computer, for example:
 
    ```
    /Gemini-ESP32-Web-AI-Chat/
    ```
 
-2. Buat file baru bernama `Gemini-ESP32-Web-AI-Chat.ino` di dalam folder tersebut.
+2. Create a new file named `Gemini-ESP32-Web-AI-Chat.ino` inside that folder.
 
-3. Salin seluruh kode dari repo [Gemini-ESP32-Web-AI-Chat](https://github.com/Katryoshkh/Gemini-ESP32-Web-AI-Chat/blob/main/Gemini-ESP32-Web-AI-Chat/Gemini-ESP32-Web-AI-Chat.ino)
+3. Copy all the code from the [Gemini-ESP32-Web-AI-Chat](https://github.com/Katryoshkh/Gemini-ESP32-Web-AI-Chat/blob/main/Gemini-ESP32-Web-AI-Chat/Gemini-ESP32-Web-AI-Chat.ino) repo.
 
-4. Buka file ini dengan Arduino IDE.
+4. Open the file with Arduino IDE.
 
-5. Masukkan kredensial Wi-Fi & API Key seperti biasa.
+5. Enter your Wi-Fi credentials & API Key as usual.
 
-6. Unggah ke ESP32 dan cek Serial Monitor seperti cara 1.
+6. Upload to the ESP32 and check the Serial Monitor, same as Method 1.
 
-## Cara Pakai
+## Usage
 
-* Ketikkan prompt di kolom input.
-* Klik tombol **"Kirim"** atau tekan `Enter`.
-* Respons akan ditampilkan dengan format markdown.
+* Type your prompt in the input field.
+* Click the **"Send"** button or press `Enter`.
+* The response will be displayed in markdown format.
 
 ## Screenshot
 
-*Tampilan antarmuka web akan terlihat seperti ini:*
+*The web interface will look like this:*
 ![preview](docs/screenshot.png)
 
-## Catatan Penting
+## Important Notes
 
-* Gunakan API Key pribadi dan jangan share secara publik.
-* Proyek ini **tidak melakukan hosting model AI di perangkat**, dan hanya menjadi antarmuka ke cloud Gemini API.
-* Pastikan koneksi internet stabil saat digunakan.
+* Use your own personal API Key and do not share it publicly.
+* This project **does not host an AI model on the device**; it only acts as an interface to the cloud-based Gemini API.
+* Make sure you have a stable internet connection while using it.
 
-## Lisensi
+## License
 
-MIT License - bebas digunakan dan dimodifikasi.
+MIT License - free to use and modify.
